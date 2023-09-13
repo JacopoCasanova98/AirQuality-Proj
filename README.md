@@ -1,4 +1,4 @@
-# AirQuality-Proj
+# AirQuality-Proj 🌍
 
 #### With AirQuality-Proj you can see the quality of the air in the different cities of the world!!
 
