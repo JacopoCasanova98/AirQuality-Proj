@@ -21,7 +21,7 @@ AirQuality-Proj is really simple to use. Write a City in the input box, press th
 ## 🔽 Installation
 
 ### 1 - Clone the repository
-[link](https://github.com/JacopoCasanova98/AirQuality-Proj.git)
+[AirQuality-Proj](https://github.com/JacopoCasanova98/AirQuality-Proj.git)
 
 ### 2 - Install the dependencies
 npm install
