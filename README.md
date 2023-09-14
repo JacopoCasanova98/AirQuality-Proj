@@ -2,7 +2,6 @@
 
 #### With AirQuality-Proj you can see the quality of the air in the different cities of the world!!
 
-image
 
 ## ❗ How it works
 AirQuality-Proj is really simple to use. Write a City in the input box, press the search button and read about the info of the quality of the air of the city!
@@ -16,14 +15,13 @@ AirQuality-Proj is really simple to use. Write a City in the input box, press th
 * React Router
 * express
 * mongoose
-* React Hook Form
 * dotenv
 
 
 ## 🔽 Installation
 
 ### 1 - Clone the repository
-link
+[link](https://github.com/JacopoCasanova98/AirQuality-Proj.git)
 
 ### 2 - Install the dependencies
 npm install
