@@ -16,6 +16,17 @@ app.use(cors({
   origin: 'https://650ac4f118794a32a456cc73--teal-belekoy-8b7fdb.netlify.app',
 }));
 
+// Specifica le origini consentite (sostituisci con il tuo dominio reale)
+app.use(cors({
+  origin: 'https://aq-server.onrender.com/auth/signup--teal-belekoy-8b7fdb.netlify.app',
+}));
+
+// Specifica le origini consentite (sostituisci con il tuo dominio reale)
+app.use(cors({
+  origin: 'https://aq-server.onrender.com/auth/login--teal-belekoy-8b7fdb.netlify.app',
+}));
+
+
 // Middlewares
 app.use(express.json());
 
