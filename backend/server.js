@@ -16,13 +16,21 @@ app.use(cors({
 app.use(express.json());
 
 // Connessione al database
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => {
+async function connectToDatabase() {
+  try {
+    await mongoose.connect(process.env.MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      poolSize: 10, // Numero di connessioni nel pool
+    });
     console.log('Connesso al database');
-  })
-  .catch((error) => {
+  } catch (error) {
     console.error('Errore di connessione al database:', error);
-  });
+    process.exit(1); // Esci dall'app in caso di errore di connessione
+  }
+}
+
+connectToDatabase(); // Chiama la funzione di connessione
 
 // Rotte per l'autenticazione
 app.use('/auth', authRoutes);
