@@ -27,7 +27,7 @@ exports.register = async (req, res) => {
 
     res.status(201).json({ message: 'Utente registrato con successo' });
   } catch (error) {
-    console.error(error);
+    console.error('Errore durante la registrazione:', error);
     res.status(500).json({ message: 'Errore durante la registrazione' });
   }
 };
@@ -38,9 +38,9 @@ exports.login = async (req, res) => {
     const { email, password } = req.body;
 
     // Verifica se l'utente esiste
-    const user = await User.findOne({ username:email });
+    const user = await User.findOne({ username: email });
     if (!user) {
-      return res.status(401).json({ message: 'email non valida' });
+      return res.status(401).json({ message: 'Email non valida' });
     }
 
     // Verifica della password
@@ -56,7 +56,7 @@ exports.login = async (req, res) => {
 
     res.status(200).json({ token });
   } catch (error) {
-    console.error(error);
+    console.error('Errore durante l\'accesso:', error); // Aggiungi questo console.log
     res.status(500).json({ message: 'Errore durante l\'accesso' });
   }
 };
