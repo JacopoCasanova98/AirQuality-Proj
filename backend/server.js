@@ -8,12 +8,13 @@ dotenv.config();
 const app = express();
 
 // Abilita CORS per tutte le origini
+// Questa chiamata è opzionale e può essere rimossa se non desideri abilitare CORS per tutte le origini
 app.use(cors());
 
 // Specifica le origini consentite (sostituisci con il tuo dominio reale)
 app.use(cors({
-    origin: 'https://aq-server.onrender.com',
-  }));
+  origin: 'https://650ac4f118794a32a456cc73--teal-belekoy-8b7fdb.netlify.app',
+}));
 
 // Middlewares
 app.use(express.json());
