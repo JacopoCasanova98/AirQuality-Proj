@@ -2,7 +2,10 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/airqualityController');
 
-router.get('/');
+router.get('/', (req, res) => {
+   console.log('Get req OK');
+});
+
 
 // Rotte per la registrazione e l'accesso
 router.post('/signup', authController.register);
