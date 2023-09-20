@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/airqualityController');
 
-router.get('/', (req, res) => {
+router.get('https://aq-server.onrender.com', (req, res) => {
    console.log('Get req OK');
 });
 
