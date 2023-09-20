@@ -12,7 +12,7 @@ app.use(cors());
 
 // Specifica le origini consentite (sostituisci con il tuo dominio reale)
 app.use(cors({
-    origin: 'http://localhost:3001',
+    origin: 'https://aq-server.onrender.com',
   }));
 
 // Middlewares
