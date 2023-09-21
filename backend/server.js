@@ -9,7 +9,7 @@ const app = express();
 
 // Configurazione CORS
 app.use(cors({
-  origin: 'https://teal-belekoy-8b7fdb.netlify.app',
+  origin: 'https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/',
 }));
 
 // Middlewares
