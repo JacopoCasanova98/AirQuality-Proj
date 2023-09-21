@@ -7,7 +7,7 @@
 
 <br>
 
-#### With AirQuality-Proj you can see the quality of the air in the different cities of the world!!
+### With AirQuality-Proj you can see the quality of the air in the different cities of the world!!
 
 ## ❗ How it works
 AirQuality-Proj is really simple to use. Write a City in the input box, press the search button and read about the info of the quality of the air of the city!
