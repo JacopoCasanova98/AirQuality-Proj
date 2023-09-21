@@ -9,7 +9,7 @@ const Login = () => {
     const handleLoginSubmit = async (e) => {
         e.preventDefault();
         
-        const response = await fetch('https://aq-server.onrender.com/auth/login', {
+        const response = await fetch('https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
