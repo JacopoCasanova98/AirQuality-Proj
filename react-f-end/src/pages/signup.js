@@ -9,7 +9,7 @@ const Signup = () => {
     const handleSignupSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://aq-server.onrender.com/auth/signup', {
+            const response = await fetch('https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
