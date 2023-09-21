@@ -3,6 +3,10 @@
 #### With AirQuality-Proj you can see the quality of the air in the different cities of the world!!
 
 
+## 🌐 Try it on Netlify
+[AirQuality-Proj 🌍](https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/))
+
+
 ## ❗ How it works
 AirQuality-Proj is really simple to use. Write a City in the input box, press the search button and read about the info of the quality of the air of the city!
 
