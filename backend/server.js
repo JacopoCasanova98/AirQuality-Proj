@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI)
     console.error('Errore di connessione al database:', error);
   });
 
-// Rotte per l'autenticazione
+// Rotte auth per l'autenticazione
 app.use('/auth', authRoutes);
 
 // Avvio del server
