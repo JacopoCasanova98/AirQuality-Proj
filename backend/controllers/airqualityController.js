@@ -54,9 +54,17 @@ exports.login = async (req, res) => {
       expiresIn: '1h',
     });
 
+    // Salva il token nel modello User
+    user.token = token;
+    await user.save();
+
     res.status(200).json({ token });
   } catch (error) {
-    console.error('Errore durante l\'accesso:', error); // Aggiungi questo console.log
+    console.error('Errore durante l\'accesso:', error);
     res.status(500).json({ message: 'Errore durante l\'accesso' });
   }
 };
+
+
+
+
