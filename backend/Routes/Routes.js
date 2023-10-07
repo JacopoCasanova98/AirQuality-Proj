@@ -20,5 +20,11 @@ router.post('/login', authController.login);
 // Rotta per aggiungere un preferito
 router.post('/add-favorite', favoriteController.authenticate, favoriteController.addFavorite);
 
+// Rotta per rimuovere un preferito
+router.post('/remove-favorite', favoriteController.authenticate, favoriteController.removeFavorite);
+
+
+router.get('/favorite-cities', favoriteController.authenticate, favoriteController.getFavoriteCities);
+
 
 module.exports = router;
