@@ -28,7 +28,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use('/auth', authRoutes);
 
 // Avvio del server
-const port = process.env.PORT || 3000;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server in ascolto sulla porta ${port}`);
 });
