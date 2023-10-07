@@ -37,7 +37,7 @@ function Home() {
   try {
     const token = localStorage.getItem('token');
 
-    const response = await fetch('http://localhost:3000/auth/add-favorite', {
+    const response = await fetch('https://aq-server.onrender.com/auth/add-favorite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const removeFavoriteCity = async (city_name) => {
   try {
     const token = localStorage.getItem('token');
 
-    const response = await fetch('http://localhost:3000/auth/remove-favorite', {
+    const response = await fetch('https://aq-server.onrender.com/auth/remove-favorite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
