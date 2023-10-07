@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mahajani&family=Poppins:wght@400;500&display=swap');
 
+$font-nsm: 'Noto Sans Mahajani', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
 .App {
   text-align: center;
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.items-center{
+
+.items-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.header-login{
+.login-title {
+  font-size: 2.6em;
+}
+
+.header-login {
   background-color: #8CCCDF;
   display: flex;
   justify-content: center;
@@ -24,56 +31,53 @@
   flex-wrap: wrap;
   border-bottom: 1px solid lightslategray;
   margin-bottom: 1em;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.nav-text{
+.message-form {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.nav-text {
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   color: black;
 }
 
-.nav-text:hover{
+.nav-text:hover {
   color: #3d64e6;
 }
 
-.login-form{
+.login-form {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 2em;
   font-size: 1.2em;
   margin: 0.5em;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.mt-5-mb-3{
+.mt-5-mb-3 {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 2em;
   font-size: 2.6em;
   flex-wrap: wrap;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.alert-danger{
+.alert-danger {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 2em;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.card-mb-1{
+.card-mb-1 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -81,39 +85,32 @@
   padding: 1em;
   font-size: 1.4em;
   border-bottom: 1px solid black;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-nsm, $font-poppins;
 }
 
-.card-mb-2{
+.card-mb-2 {
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 2em;
   padding: 1em;
   font-size: 1.3em;
-  
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  
+  border-bottom: 1px solid black;
+  font-family: $font-nsm, $font-poppins;
+  margin-bottom: 0.5em;
 }
 
-.card-mb-3{
+.card-mb-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   gap: 2em;
   padding: 1em;
-  
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-poppins;
 }
 
-.card-mb-4{
+.card-mb-4 {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -121,69 +118,78 @@
   padding: 1em;
   font-size: 1em;
   border-bottom: 1px solid black;
-  
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-poppins;
 }
 
-.alert-danger{
+.alert-danger {
   color: red;
   font-size: 1.3em;
   margin: 2em;
 }
 
-.form-control{
+.form-control {
   font-size: 1.5em;
   padding: 0 0.62em;
   border: none;
   border-bottom: 2px solid #3d64e6;
   outline: none;
   color: #222a43;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.7em;
-
-  font-family: 'Noto Sans Mahajani', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-poppins;
 }
 
-.btn-primary{
-    font-size: 1em;
-    background-color: #3d64e6;
-    color: #ffffff;
-    padding: 0.8em 1.2em;
-    border: none;
-    border-radius: 1.5em;
-    cursor: pointer;
+.favorite-list{
+  font-family: $font-poppins;
 }
 
-.card-title{
+.favorite-button{
+  margin: 1.5em ;
+}
+
+.preferites-title{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin: 1em ;
+  padding: 1em;
+}
+
+.btn-primary {
+  font-size: 1em;
+  background-color: #3d64e6;
+  color: #ffffff;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.card-title {
   font-size: 1.2em;
 }
 
-.card-subtitle-mb-2{
+.card-subtitle-mb-2 {
   font-size: 1em;
 }
 
-.input-form{
-  font-size: 1em;
+.input-form {
+  font-size: 1.3em;
   width: 20em;
   padding: 0 0.62em;
   border: none;
   border-bottom: 2px solid #3d64e6;
   outline: none;
   color: #222a43;
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-poppins;
 }
 
-.login-signup-error{
+.login-signup-error {
   color: red;
 }
 
-.message-sign-up{
+.message-sign-up {
   color: #123fd4;
 }
 
-button{
+button {
   font-size: 1em;
   background-color: #3d56e6;
   color: #ffffff;
@@ -193,14 +199,14 @@ button{
   cursor: pointer;
 }
 
-.form-structure{
+.form-structure {
   display: flex;
   flex-direction: column;
   gap: 1em;
   margin-bottom: 1em;
 }
 
-.result-container{
+.result-container {
   background-color: #ffffffef;
   padding: 2.6em 2.8em;
   border-radius: 0.62em;
@@ -211,33 +217,13 @@ button{
   margin-bottom: 5em;
 }
 
-footer{
-  justify-content: center;
-  bottom: 0;
-  width: 100%;
-  background-color: #8CCCDF;
-  padding-top: 0.5em;
-  position: fixed;
-  bottom: 0;
-  padding: 0.7em;
-}
-
-.text-footer{
-    display: flex;
-    justify-content: center;
-}
-
-
-
-@media only screen and (max-width: 557px){
-
-  .header-login{
+@media only screen and (max-width: 557px) {
+  .header-login {
     display: grid;
     gap: 3em;
   }
 
-  .input-form{
+  .input-form {
     width: 95%;
   }
-
 }
