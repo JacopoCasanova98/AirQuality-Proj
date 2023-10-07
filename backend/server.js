@@ -9,7 +9,7 @@ const app = express();
 
 // Configurazione CORS
 app.use(cors({
-  origin: 'https://fluffy-hamster-94e669.netlify.app',
+  origin: 'https://chic-capybara-5dcb7f.netlify.app',
 }));
 
 // Middlewares
