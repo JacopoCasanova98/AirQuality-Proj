@@ -9,7 +9,7 @@ const app = express();
 
 // Configurazione CORS
 app.use(cors({
-  origin: 'http://localhost:3001',
+  origin: 'https://gleeful-florentine-6e9674.netlify.app/',
 }));
 
 // Middlewares
